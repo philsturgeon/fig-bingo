@@ -21,25 +21,50 @@ function setSquare(thisSquare){
   var currentSquare = "square" + thisSquare;
   var colPlace = new Array(0,1,2,3,4,0,1,2,3,4,0,1,3,4,0,1,2,3,4,0,1,2,3,4);
   var colBasis = colPlace[thisSquare] * 15;
-  var newNum = colBasis + getNewNum() + 1;
 
-  do{
-    newNum = colBasis + getNewNum() + 1;
-  }while(usedNums[newNum]);
-  
+  do {
+    var newNum = getNewNum();
+  } while(usedNums[newNum]);
+
   usedNums[newNum] = true;
   document.getElementById(currentSquare).innerHTML = newNum;
 }
 
 function getNewNum() {
-  return Math.floor(Math.random() * 15);
+  var words = [
+    'Snarky Reference to Phil',
+    '[A Constructive Comment]',
+    'Too Powerful',
+    'Secretarial Power',
+    'Expulsion',
+    '-1',
+    'Bylaw',
+    'Snarky Reference to Mike',
+    '[Arbitrary Ad-hominem Attack]',
+    'Formal Standards Body',
+    'PHP',
+    'Moral Stand',
+    'Thicker Skin',
+    'FIG 3.0',
+    'Subordinate',
+    'Drama',
+    'Conspiracy',
+    'People Not Projects',
+    'Potential',
+    'Middleware',
+    'Social Justice',
+    'Steering',
+    'Authoritarian',
+    'Complainaint',
+    'Committee ',
+    'Constrained Duties',
+  ];
+
+  return words[Math.floor(Math.random()*words.length)];
 }
 
 function anotherCard() {
-  for (var i = 1; i < usedNums.length; i++) {
-    usedNums[i] = false;
-  };
-
+  usedNums = new Array(76);
   newCard();
   return false;
 }
