@@ -55,6 +55,7 @@ function getNewNum() {
     'Social Justice',
     'Steering',
     'Authoritarian',
+    '"I assert"',
     'Complainaint',
     'Committee ',
     'Constrained Duties',
