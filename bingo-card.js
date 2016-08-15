@@ -57,8 +57,10 @@ function getNewNum() {
     'Authoritarian',
     '"I assert"',
     'Complainaint',
-    'Committee ',
+    'Committee',
     'Constrained Duties',
+    'Secretarial Collaborator',
+    'Clearing the Decks',
   ];
 
   return words[Math.floor(Math.random()*words.length)];
