@@ -21,7 +21,8 @@ th, td {
 	padding: 10px;
 	border: 2px #666 solid;
 	text-align: center;
-	font-size: 24px;
+	font-size: 18px;
+    	height: 90pt;
 }
 
 #free {
