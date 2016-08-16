@@ -61,6 +61,7 @@ function getNewNum() {
     'Constrained Duties',
     'Secretarial Collaborator',
     'Clearing the Decks',
+    'Garbage Fire',
   ];
 
   return words[Math.floor(Math.random()*words.length)];
